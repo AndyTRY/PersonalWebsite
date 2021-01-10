@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 30px;
+  --navHeadTextFont: 22px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'NTR', 'arial';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  background-color: var(--headColor);
+}
+
+.nav-container a {
+  color: white;
+}
+
+.navText {
+  font-size: var(--navHeadTextFont);
+}
+
+#introHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 3em 2em 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#introHead .logo {
+  color: var(--secondaryColor);
+  font-size: var(--headTextFont);
+  white-space: nowrap;
+}
+
+#introHead ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#introHead ul a {
+  display: block;
+  padding: 0 1em;
+  white-space: nowrap;
+}
+
+.hero {
+  background-color: var(--bodyColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4em;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.heroText {
+  font-size: var(--heroText);
+  line-height: 75px;
+  color: white;
+  max-width: 70%;
+}
+
+.getToKnow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 50px;
+}
+
+.getToKnow p {
+  color: white;
+  white-space: nowrap;
+}
+
+.circleAnimation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+      grid-template-areas: "cir1 cir2" "cir3 cir4";
+  position: relative;
+}
+
+.circleAnimation #arrow1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.circleAnimation #svg_css {
+  top: 210px;
+  left: 120px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_java {
+  left: 220px;
+  top: 105px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_nodejs {
+  position: absolute;
+  top: 215px;
+  left: 220px;
+  opacity: 1;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_postgre {
+  top: 120px;
+  left: 120px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+#cir1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cir1;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cir2;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cir3;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cir4;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.subjectHeader {
+  background-color: var(--headColor);
+  padding: 1em 3em 1em 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #EBB16D;
+  font-size: var(--headTextFont);
+  text-align: center;
+}
+
+.workOuterBody {
+  background-color: var(--bodyColor);
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+
+.workInnerBody {
+  background-color: white;
+  position: absolute;
+  border-radius: 0em 0em 0em 2em;
+  width: 100%;
+  left: 50px;
+  height: 650px;
+  padding: 2em 10em 0em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.workInnerBody .workLeftInner h1 {
+  color: black;
+  padding: 50px 0 10px 0;
+  margin: 0;
+  font-size: var(--h1WorkText);
+  white-space: nowrap;
+}
+
+.workInnerBody .workLeftInner p {
+  width: 550px;
+  font-size: 18px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  line-height: 45px;
+  padding-bottom: 20px;
+}
+
+.workInnerBody .workLeftInner li {
+  font-family: 'Poppins', sans-serif;
+  padding: 1em 0em 0em 0em;
+  font-size: 18px;
+}
+
+.workInnerBody .workRightInner {
+  padding: 60px 200px 10px 0;
+}
+
+.workInnerBody .workRightInner #searchArr {
+  color: wheat;
+}
+
+.workInnerBody .workRightInner .linkIcons {
+  padding: 10px 0 0 10px;
+}
+
+.workInnerBody .workRightInner .linkIcons #iconWebsite {
+  height: 85px;
+  width: 94;
+}
+
+.workInnerBody .workRightInner .linkIcons #iconGithub {
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2em;
+  }
+  :root {
+    --headTextFont: 22px;
+    --navHeadTextFont: 17px;
+    --heroText: 85px;
+  }
+  #introHead {
+    padding: 2em 1em 2em 2em;
+  }
+  .workOuterBody {
+    height: 1200px;
+  }
+  .workInnerBody {
+    left: 0;
+    padding: 1em 2em 0em 3em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1100px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .workInnerBody .workLeftInner h1 {
+    white-space: normal;
+  }
+  .workInnerBody .workLeftInner p {
+    width: 400px;
+  }
+  .workInnerBody .workRightInner #searchArr {
+    width: 400px;
+    height: 280px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

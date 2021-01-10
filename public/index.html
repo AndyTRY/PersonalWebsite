@@ -10,37 +10,104 @@
     <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type = "text/css" href="css/default.css">
+    <link rel="stylesheet"  href="css/main.css">
 
     <title>My Test</title>
 </head>
 
 <body>
-    <section class="s1">
-      Welcome Ti the In
-    </section>
 
-    <section class="s2">
-      <div class="main-container">
-       About
+  <div class="nav-container">
+    <header id="introHead">  
+      <a href="index.html" class="logo">Andy Yuen</a>
+
+      <nav>
+        <ul>
+          <li><a class=navText href="#">My Work</a></li>
+          <li><a class=navText href="#">About Me</a></li>
+          <li><a class=navText href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="hero">
+    <div class="content">
+      <h1 class="heroText">Learning to make incredible things</h1>
         
-
+      <div class="getToKnow">
+        <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M42.78 20.7678C43.7563 19.7915 43.7563 18.2085 42.78 17.2322L26.8701 1.32233C25.8937 0.34602 24.3108 0.34602 23.3345 1.32233C22.3582 2.29864 22.3582 3.88155 23.3345 4.85786L37.4767 19L23.3345 33.1421C22.3582 34.1184 22.3582 35.7014 23.3345 36.6777C24.3108 37.654 25.8937 37.654 26.8701 36.6777L42.78 20.7678ZM0 21.5H41.0122V16.5H0L0 21.5Z" fill="#E83737"/>
+        </svg>
+        <p>Get to know Me</p>
       </div>
-    </section>
-    <section class="s1">
-      <div class="main-container">
-       Portfolio
-        
+    </div>
+    
+    <div class="heroAnimation">
+      <div class="circleAnimation">
+        <img class="circles" id="cir1" src="Pictures/OrangeCircle.svg" alt="" height="200px" width="200px">
+        <img class="circles" id="cir2" src="Pictures/RedCircle.svg" alt="" height="200px" width="200px">
+        <img class="circles" id="cir3" src="Pictures/RedCircle.svg" alt="" height="200px" width="200px">
+        <img class="circles" id="cir4" src="Pictures/OrangeCircle.svg" alt="" height="200px" width="200px">
 
-      </div>
-    </section>
-    <section class="s2">
-      <div class="main-container">
-       Contact
-        
+        <img id="arrow1" src="Pictures/CArrow.svg" alt="">  
 
+        <img id="svg_css" src="Pictures/css.svg" alt="">
+        <img id="svg_java" src="Pictures/java.svg" alt="">
+        <img id="svg_nodejs" src="Pictures/nodejs.svg" alt="">
+        <img id="svg_postgre" src="Pictures/postgre.svg" alt="">
+
+      </div> 
+   </div> 
+  </div>
+
+  <div class="project">
+
+    <div class="subjectHeader">  
+          My Work
+    </div>
+    
+    <div class="workOuterBody">
+      <div class="workInnerBody">
+
+        <div class="workLeftInner">
+          <h1 class="heroText">Search Aggregator</h1>
+          <p>A website that arrgeates Search results from select websites 
+            onto a single page by scraping basic data on the first page of 
+            products
+          </p>
+  
+          <ul>
+            <li><b>NodeJS/Express</b> for Backend</li>
+            <li><b>Ajax</b> for Frontend Calls</li>
+            <li><b>Python</b> for Webscraping</li>
+          </ul>
+        </div>
+
+        <div class="workRightInner">
+          <img id="searchArr" src="Pictures/searchArr.png" alt="" height="425px" width="610px">
+
+          <div class="linkIcons">
+            <img id="iconWebsite" src="Pictures/website.svg" alt="">
+            <img id="iconGithub" src="Pictures/github.svg" padding="10px">  
+          </div>
+        </div>
+      
       </div>
-    </section>
+    </div>
+
+
+    
+
+    
+
+
+  </div>
+
+
+  <script type="text/javascript" src="main.js"></script>
+    
+    
 
 </body>
 </html>
