@@ -1,3 +1,3 @@
 # PersonalWebsite
 
-visit my Personal Website at http://andytry.com
+visit the website at http://andytry.com
