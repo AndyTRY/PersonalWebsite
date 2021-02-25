@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAA;EACR,cAAc,EAAE,MAAM;CAazB;;AAdD,AAGI,YAHQ,CAGR,QAAQ,CAAA;EACJ,OAAO,EAAE,aAAa;CACzB;;AALL,AAOI,YAPQ,CAOR,YAAY,CAAA;EACR,UAAU,EAAE,GAAG;EACf,KAAK,EAAE,KAAK;CAIf;;AAbL,AAUQ,YAVI,CAOR,YAAY,CAGR,CAAC,CAAA;EACG,SAAS,EAAE,IAAI;CAClB;;AAIT,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAC,oBAAoB;CAC/B",
+    "sources": [
+        "aboutMe.scss"
+    ],
+    "names": [],
+    "file": "aboutMe.css"
+}

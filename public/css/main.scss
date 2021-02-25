@@ -2,22 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
-:root{
-    --headColor:#04063C;
-    --bodyColor:#111350;
-    --secondaryColor:#EBB16D;
-    --tertiaryColor:#E83737;
-    --paragraphTextColor:#292D9F;
+@import "./variables.scss";
+@import "./navHeader.scss";
+@import "./hero.scss";
+@import "./Mywork.scss";
+@import "./aboutMe.scss";
+@import "./contact.scss";
 
-    --headTextFont: 30px;
-    --navHeadTextFont: 22px;
-    --heroText: 96px;
-    --h1WorkText: 90px;
-}
+
+$leftSpace: 9.5em;
+$leftSpaceMin: 2.5em;
+$NTRerror: 0.3em;
+$heroAnimSpace: 3em;
 
 
 html, body {
     max-width: 100%;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -27,322 +28,52 @@ body{
     font-family: 'NTR', 'arial';
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding:0;
-}
-
-
-
-a{
-    text-decoration: none;
-}
-
-.nav-container{
-    background-color: var(--headColor);
-
-    a{
-        color:white;
-    }
-
-
-}
-
-.navText{
-    font-size: var(--navHeadTextFont);
-}
-
-#introHead{
-    display: flex;
-    justify-content: space-between;
-    padding:2em 3em 2em 4em;
-    align-items: center;
-
-    .logo{
-        color:var(--secondaryColor);
-        font-size: var(--headTextFont);
-        white-space: nowrap;
-        
-    }
-
-   
-
-    ul{
-        display: flex;
-        
-        a{
-            display:block;
-            padding: 0 1em;
-            white-space: nowrap;
-        }
-    }
-        
-    
-
-}
-
-
-.hero{
-    background-color: var(--bodyColor);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 4em;
-}
-
-.content{
-    display: flex;
-    flex-flow: column;
-    
-
-    
-}
-
-.heroText{
-    
-    font-size: var(--heroText);
-    line-height: 75px;
-    color: white;
-    max-width: 70%;
-}
-
-.getToKnow{
-    display: flex;
-    align-items: center;
-    p{
-        color: white;
-        white-space: nowrap;
-    }
-    position: relative;
-    bottom: 50px;
-}
-
-
-.circleAnimation{
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns:200px 200px;
-    grid-template-areas: 
-    "cir1 cir2"
-    "cir3 cir4";
-    position: relative;
-
-    #arrow1{
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 100px;
-        left: 100px;
-        transition: transform 0.5s ease-in;
-    }
-
-    #svg_css{
-        top:210px;
-        left: 120px;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1s linear;
-    }
-
-    #svg_java{
-        left:220px;
-        top: 105px;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1s linear;
-    }
-
-    #svg_nodejs{
-        position: absolute;
-        top: 215px;
-        left: 220px;
-        opacity: 1;
-        transition: opacity 1s linear;
-        
-    }
-
-    #svg_postgre{
-        top:120px;
-        left: 120px;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1s linear;
-    }
-    
-}
-
-#cir1{
-    grid-area: cir1;
-    transition: transform 0.5s ease-in;
-    
-}
-
-#cir2{
-    grid-area: cir2;
-    transition: transform 0.5s ease-in;
-}
-
-#cir3{
-    grid-area: cir3;
-    transition: transform 0.5s ease-in; 
-}
-
-#cir4{
-    grid-area: cir4;
-    transition: transform 0.5s ease-in;
-}
-
-
-
-
-
-
-
-
-
-//My work Section
 
 .subjectHeader{
     background-color: var(--headColor);
-    padding:1em 3em 1em 2em;
-    align-items: center;
+    padding:0.5em 0em 0.5em 155px;
     color: #EBB16D;
     font-size: var(--headTextFont);
-    text-align: center;
-    
+    font-size: 50px;
 }
-
-.workOuterBody{
-    background-color: var(--bodyColor);
-    position: relative;
-    width: 100%;
-    height: 750px;
-}
-
-.workInnerBody{
-    background-color: white;
-    position: absolute;
-    border-radius: 0em 0em 0em 2em;
-    width: 100%;
-    left: 50px;
-    height: 650px;
-    padding: 2em 10em 0em 7em;
-
-    display: flex;
-    justify-content: space-between;
-    
-    
-    .workLeftInner{
-        h1{
-            color: black;
-            padding: 50px 0 10px 0;
-            margin: 0;
-            font-size: var(--h1WorkText);
-            white-space: nowrap;
-        }
-        
-        p{
-            
-            width: 550px;
-            font-size: 18px;
-            color: black;
-            font-family: 'Poppins', sans-serif;
-            line-height: 45px;
-            padding-bottom: 20px;
-        }
-        
-        li{
-            font-family: 'Poppins', sans-serif;
-            padding: 1em 0em 0em 0em;
-            font-size: 18px;
-        }
-    }
-    
-        
-    .workRightInner{
-
-        padding: 60px 200px 10px 0;
-
-        #searchArr{
-            color: wheat;
-        }
-        
-        .linkIcons{
-            padding: 10px 0 0 10px;
-            #iconWebsite{
-                height: 85px;
-                width: 94;
-            }
-            
-            #iconGithub{
-                padding-bottom:5px ;
-                padding-left: 10px;
-            }
-
-        }
-        
-    }
-    
-}
-
-
-
-
-
-
 
 
 
 @media screen and (max-width:1000px){
 
-    .hero{
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    :root{
-        --headTextFont: 22px;
-        --navHeadTextFont: 17px;
-        --heroText: 85px;
-    }
-
-    #introHead{
-        padding: 2em 1em 2em 2em;
-    }
-
-    .workOuterBody{
-        height: 1200px;
-    }
-
-    .workInnerBody{
-        left: 0;
-        padding: 1em 2em 0em 3em;
-        flex-direction: column;
-        height: 1100px;
-        justify-content: flex-start;
-
-        .workLeftInner{
-            h1{
-                white-space: normal;
-            }
-
-            p{
-                width: 400px;
-            }
-        }
-
-        .workRightInner{
-            #searchArr{
-                width: 400px;
-                height: 280px;
-            }
-        }
+    @import "./1000px/navHeader.scss";
+    @import "./1000px/hero.scss";
+    @import "./1000px/myWork.scss";
+    @import "./1000px/contact.scss";
+    
+    .subjectHeader{
+        padding:0 3em 0 45px;
     }
 
 }
+
+@media screen and (max-width:1150px){
+    @import "./1000px/aboutMe.scss";
+
+}
+
+
+
+@media screen and (max-width:1300px){
+    @import "./1200px/aboutMe.scss";
+
+    :root{
+        --headTextFont: 35px;
+        --navHeadTextFont: 20px;
+        --heroText: 85px;
+    }
+}
+
+@media screen and (max-width:1350px){
+    @import "./1200px/myWork.scss";
+
+   
+}
+
 
 

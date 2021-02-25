@@ -1,0 +1,115 @@
+
+$leftSpace: 9.5em;
+$leftSpaceMin: 2.5em;
+$NTRerror: 0.3em;
+$heroAnimSpace: 3em;
+
+.aboutMeBody{
+
+    background-color: var(--bodyColor);
+    display:flex;
+    justify-content: space-between;
+    padding: 2em 0 2em 0;
+
+
+    #selfImg{
+        padding: 3em 0 0 $leftSpace+$NTRerror;
+        width: 500px;
+        height: 666px;
+    }
+    
+    
+    .aboutmeText{
+        background-color: var(--headColor);
+        width: 550px;
+        height: fit-content;
+       
+        
+        margin: 3em 6em 3em 6em;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            
+            margin: 10px 40px 0 35px;
+            color: white;
+            font-size: 30px;
+            font-family: 'NTR', 'arial';
+            
+        }
+
+        a{
+            font-family: 'NTR', 'arial';
+            color: #E83737;
+            font-size: 40px;
+            margin: 35px 0 35px 0;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        
+
+        .coolstuff{
+            background-color: var(--tertiaryColor);
+            width: 90%;
+            justify-content: center;
+            border-radius: 50px;
+            transition: 0.3s ease-in;
+
+            display:grid;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "Pgraph";
+            justify-items: center;
+
+            .sketchfab{
+                grid-area: sketchfab;
+                display: none;
+            }
+
+            .CADArrow{
+                top: 50px;
+            }
+
+            .CADArrow:hover{
+                img{
+                    width: 125px;
+                    height: 60px;
+                }
+            }
+
+            
+
+            #coolStuff{
+                grid-area: Pgraph;
+
+                font-size: 35px;
+            }
+           
+        }
+
+
+        .coolstuff:hover{
+            cursor: pointer;
+            
+            #coolStuff{
+                color: black;
+            }
+        }
+
+        .toggleColor{
+            background-color: var(--secondaryColor);
+        }
+
+    }
+
+}
+
+
+
+
+

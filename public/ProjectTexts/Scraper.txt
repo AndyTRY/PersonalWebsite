@@ -1,0 +1,13 @@
+Personal Project
+Search Aggregator 
+A website that aggregates search results from select websites onto a single page by scraping basic data on the first page of products
+
+NodeJS/Express/b for backend
+Ajax/b for Frontend Calls
+MongoDB/b for storing results
+Python/b for web scraping
+
+github
+https://github.com/AndyTRY/Scraper
+website
+n/a

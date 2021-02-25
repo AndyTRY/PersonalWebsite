@@ -1,0 +1,30 @@
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 45px;
+  --navHeadTextFont: 30px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+.contactBody {
+  padding: 1.5em 0 3em 9.8em;
+  background-color: var(--bodyColor);
+}
+
+.contactBody p {
+  color: white;
+  font-size: 25px;
+}
+
+.contactBody .contactIcons {
+  padding-top: 20px;
+}
+
+.contactBody .contactIcons .contactIcon {
+  padding: 0 2em 0 0;
+}
+/*# sourceMappingURL=contact.css.map */

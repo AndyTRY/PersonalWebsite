@@ -1,0 +1,63 @@
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 45px;
+  --navHeadTextFont: 30px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+#headerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  background-color: var(--headColor);
+}
+
+.nav-container #introHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em 9.5em 0.5em 9.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container #introHead .logo {
+  color: var(--secondaryColor);
+  font-size: var(--headTextFont);
+  white-space: nowrap;
+}
+
+.nav-container #introHead ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container #introHead ul li {
+  cursor: pointer;
+}
+
+.nav-container #introHead ul p {
+  color: white;
+  display: block;
+  padding: 0 1em;
+  white-space: nowrap;
+  font-size: var(--navHeadTextFont);
+}
+/*# sourceMappingURL=navHeader.css.map */

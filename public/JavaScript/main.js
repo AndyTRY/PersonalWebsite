@@ -2,7 +2,6 @@ let nodeIcon = document.getElementById("svg_nodejs");
 let javaIcon = document.getElementById("svg_java");
 let postgreIcon = document.getElementById("svg_postgre");
 let cssIcon = document.getElementById("svg_css");
-
 let circles = document.getElementsByClassName("circles");
 let arrow = document.getElementById('arrow1');
 
@@ -14,6 +13,7 @@ let rotates = [90, 180, 270, 360];
 for(var i=0; i<icons.length; i++){
     icons[i].addEventListener('click', NodeRotate.bind(null, rotates[i], i, IconAnimate.bind(null,i, rotates[i])));
 }
+
 
 
 

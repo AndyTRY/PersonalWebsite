@@ -1,0 +1,21 @@
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 45px;
+  --navHeadTextFont: 30px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+.hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  padding: 4em 4em 4em 2.8em;
+}
+/*# sourceMappingURL=hero.css.map */

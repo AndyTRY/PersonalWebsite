@@ -1,0 +1,48 @@
+
+
+.workOuterBody{
+    height: 1250px;
+}
+
+.workInnerBody{
+    left: 0;
+    padding: 1em 2em 0em 3em;
+    height: 1150px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "workLeftInner"
+    "workRightInner";
+    
+    .workLeftInner{
+        h1{
+            white-space: normal;
+        }
+
+        p{
+            width: 400px;
+        }
+    }
+
+    .workRightInner{
+        padding: 4em 12em 0 0;
+        img{
+            width: 400px;
+            height: 280px;
+        }
+
+        .linkIcons{
+            padding-top: calc(280px + 2em);
+        }
+    }
+}
+
+.orangeBox{
+    left: 0;
+    height: 45px;
+    width: 45px;
+    img{
+        height: 35px;
+        width: 30px;
+    }
+}
+

@@ -1,0 +1,12 @@
+Work Position
+Backend Developer
+-Added routes that allows the ability to search and update favorited users/music form database
+-Implemented route for payment with Stripe 
+
+NodeJS/Express/b for routes
+PostgreSQL/b for database
+
+github
+n/a
+website
+n/a

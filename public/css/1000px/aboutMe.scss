@@ -1,0 +1,22 @@
+
+
+
+.aboutMeBody{
+    flex-direction: column;
+
+    #selfImg{
+        padding: 3em 0 0 1.5em;
+    }
+
+    .aboutmeText{
+        margin-top: 6em;
+        width: 500px;
+        p{
+            font-size: 30px;
+        }    
+    }
+}  
+
+#subject_aboutMe{
+    padding:0.5em 3em 0.5em 45px;
+}

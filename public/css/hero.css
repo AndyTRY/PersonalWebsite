@@ -1,0 +1,245 @@
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 45px;
+  --navHeadTextFont: 30px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+.hero {
+  background-color: var(--bodyColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2em 9.5em 6em 9.5em;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.heroText {
+  font-size: var(--heroText);
+  line-height: 75px;
+  color: white;
+  max-width: 80%;
+  padding-right: 20px;
+}
+
+.getToKnow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bodyColor);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1em 0 1em;
+  border-radius: 3em;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  position: relative;
+  bottom: 3em;
+  padding-left: 0.3em;
+}
+
+.getToKnow p {
+  color: white;
+  white-space: nowrap;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#getToKnow:hover {
+  background-color: var(--secondaryColor);
+  cursor: pointer;
+}
+
+#getToKnow:hover p {
+  color: black;
+}
+
+.circleAnimation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+      grid-template-areas: "cir1 cir2" "cir3 cir4";
+  position: relative;
+  padding-top: 2em;
+  /*
+    #arrow1:hover{
+       #arrow2{
+           fill: var(--bodyColor);
+       }
+    }
+
+
+    #arrow2{
+        transition: 0.5s ease-in;
+    }
+    /*
+    #arrow2:hover{
+        fill:var(--bodyColor);
+    }
+    */
+}
+
+.circleAnimation #arrow1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: calc(100px + 2em);
+  left: 100px;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.circleAnimation .introClick {
+  position: absolute;
+  top: calc(235px + 2em);
+  left: 240px;
+  -webkit-transition: opacity 300ms  ease-in;
+  transition: opacity 300ms  ease-in;
+  opacity: 0;
+}
+
+.circleAnimation .clickin {
+  opacity: 1;
+}
+
+.circleAnimation #svg_css {
+  top: calc(210px + 2em);
+  left: 120px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_css:hover {
+  cursor: pointer;
+  width: 75px;
+  height: 86px;
+  top: calc(207px + 2em);
+  left: 115px;
+}
+
+.circleAnimation #svg_java {
+  left: 220px;
+  top: calc(105px + 2em);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_java:hover {
+  cursor: pointer;
+  width: 70px;
+  height: 97px;
+  top: calc(102px + 2em);
+  left: 210px;
+}
+
+.circleAnimation #svg_nodejs {
+  position: absolute;
+  top: calc(215px + 2em);
+  left: 220px;
+  opacity: 1;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_nodejs:hover {
+  cursor: pointer;
+  width: 70px;
+  height: 80px;
+  top: calc(210px + 2em);
+  left: 215px;
+}
+
+.circleAnimation #svg_postgre {
+  top: calc(120px + 2em);
+  left: 120px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.circleAnimation #svg_postgre:hover {
+  cursor: pointer;
+  width: 82px;
+  height: 85px;
+  top: calc(120px + 2em);
+  left: 115px;
+}
+
+#cir1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cir1;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cir2;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cir3;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+#cir4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cir4;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+/*# sourceMappingURL=hero.css.map */

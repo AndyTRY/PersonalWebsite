@@ -1,0 +1,170 @@
+:root {
+  --headColor:#04063C;
+  --bodyColor:#111350;
+  --secondaryColor:#EBB16D;
+  --tertiaryColor:#E83737;
+  --paragraphTextColor:#292D9F;
+  --headTextFont: 45px;
+  --navHeadTextFont: 30px;
+  --heroText: 96px;
+  --h1WorkText: 90px;
+}
+
+.workOuterBody {
+  background-color: var(--bodyColor);
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+
+.orangeBox {
+  position: absolute;
+  background-color: #EBB16D;
+  left: 3em;
+  height: 50px;
+  width: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orangeBox img {
+  position: absolute;
+  padding: 7px 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.orangeBox img:hover {
+  opacity: 1;
+}
+
+.workInnerBody {
+  background-color: white;
+  position: absolute;
+  border-radius: 0em 0em 0em 2em;
+  width: 100%;
+  left: 3em;
+  height: 650px;
+  padding: 2em 10em 0 6.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "workLeftInner workRightInner";
+}
+
+.workInnerBody .workLeftInner {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: workLeftInner;
+}
+
+.workInnerBody .workLeftInner h2 {
+  font-size: 25px;
+  color: var(--bodyColor);
+  padding-left: 0.3em;
+}
+
+.workInnerBody .workLeftInner h1 {
+  color: black;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: var(--h1WorkText);
+  white-space: nowrap;
+}
+
+.workInnerBody .workLeftInner p {
+  width: 550px;
+  font-size: 18px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  line-height: 45px;
+  padding-bottom: 1.25em;
+  padding-left: 0.3em;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.workInnerBody .workLeftInner ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.workInnerBody .workLeftInner ul li {
+  font-family: 'Poppins', sans-serif;
+  padding: 1em 0em 0em 0em;
+  font-size: 18px;
+}
+
+.workInnerBody .workRightInner {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: workRightInner;
+  padding: 4em 12.5em 1.5em 3em;
+}
+
+.workInnerBody .workRightInner .images {
+  position: relative;
+}
+
+.workInnerBody .workRightInner .images .projectImg {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.workInnerBody .workRightInner .images .opaqueImg {
+  opacity: 1;
+}
+
+.workInnerBody .workRightInner .images p {
+  position: absolute;
+}
+
+.workInnerBody .workRightInner .linkIcons {
+  padding-top: calc(375px + 2em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workInnerBody .workRightInner .linkIcons #iconWebsite {
+  height: 50px;
+  width: 55;
+}
+
+.workInnerBody .workRightInner .linkIcons #iconGithub {
+  padding-bottom: 4px;
+  padding-right: 2em;
+  height: 47px;
+  width: 47px;
+  color: aqua;
+}
+
+.textShift {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.textShift2 {
+  opacity: 0;
+  -webkit-transition: opacity 20ms ease-in;
+  transition: opacity 20ms ease-in;
+}
+
+.fade {
+  opacity: 1;
+  -webkit-transition: opacity 300ms  ease-in;
+  transition: opacity 300ms  ease-in;
+}
+
+.fade2 {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+/*# sourceMappingURL=Mywork.css.map */

@@ -1,0 +1,104 @@
+.aboutMeBody {
+  background-color: var(--bodyColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 0 2em 0;
+}
+
+.aboutMeBody #selfImg {
+  padding: 3em 0 0 9.8em;
+  width: 500px;
+  height: 666px;
+}
+
+.aboutMeBody .aboutmeText {
+  background-color: var(--headColor);
+  width: 550px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3em 6em 3em 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMeBody .aboutmeText p {
+  margin: 10px 40px 0 35px;
+  color: white;
+  font-size: 30px;
+  font-family: 'NTR', 'arial';
+}
+
+.aboutMeBody .aboutmeText a {
+  font-family: 'NTR', 'arial';
+  color: #E83737;
+  font-size: 40px;
+  margin: 35px 0 35px 0;
+}
+
+.aboutMeBody .aboutmeText a:hover {
+  text-decoration: underline;
+}
+
+.aboutMeBody .aboutmeText .coolstuff {
+  background-color: var(--tertiaryColor);
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "Pgraph";
+  justify-items: center;
+}
+
+.aboutMeBody .aboutmeText .coolstuff .sketchfab {
+  grid-area: sketchfab;
+  display: none;
+}
+
+.aboutMeBody .aboutmeText .coolstuff .CADArrow {
+  top: 50px;
+}
+
+.aboutMeBody .aboutmeText .coolstuff .CADArrow:hover img {
+  width: 125px;
+  height: 60px;
+}
+
+.aboutMeBody .aboutmeText .coolstuff #coolStuff {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Pgraph;
+  font-size: 35px;
+}
+
+.aboutMeBody .aboutmeText .coolstuff:hover {
+  cursor: pointer;
+}
+
+.aboutMeBody .aboutmeText .coolstuff:hover #coolStuff {
+  color: black;
+}
+
+.aboutMeBody .aboutmeText .toggleColor {
+  background-color: var(--secondaryColor);
+}
+/*# sourceMappingURL=aboutMe.css.map */

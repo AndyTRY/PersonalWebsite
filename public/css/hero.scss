@@ -1,0 +1,198 @@
+@import "./variables.scss";
+
+@mixin setTransitionHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+
+.hero{
+    background-color: var(--bodyColor);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2em $leftSpace 6em $leftSpace;
+}
+
+.content{
+    display: flex;
+    flex-flow: column;    
+}
+
+.heroText{
+    
+    font-size: var(--heroText);
+    line-height: 75px;
+    color: white;
+    max-width: 80%;
+    padding-right: 20px;
+}
+
+.getToKnow{
+    display: flex;
+    align-items: center;
+    background-color: var(--bodyColor);
+    width: fit-content;
+    padding: 0 1em 0 1em;
+    border-radius: 3em;
+    transition: 0.3s linear;
+    p{
+        color: white;
+        white-space: nowrap;
+        transition: 0.3s linear;
+    }
+    position: relative;
+    bottom: 3em;
+    padding-left: $NTRerror;
+    
+}
+
+#getToKnow:hover{
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+    p{
+        color: black;
+    }
+    
+}
+
+
+.circleAnimation{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns:200px 200px;
+    grid-template-areas: 
+    "cir1 cir2"
+    "cir3 cir4";
+    position: relative;
+    padding-top:2em;
+    
+
+    #arrow1{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: calc(100px + 2em);
+        left: 100px;
+        transition: transform 0.5s ease-in;
+    }
+
+    .introClick{
+        position: absolute;
+        top: calc(235px + 2em);
+        left: 240px;
+        transition: opacity 300ms  ease-in;
+        opacity: 0;
+    }
+
+    .clickin{
+        opacity: 1;
+    }
+
+ 
+
+    /*
+    #arrow1:hover{
+       #arrow2{
+           fill: var(--bodyColor);
+       }
+    }
+
+
+    #arrow2{
+        transition: 0.5s ease-in;
+    }
+    /*
+    #arrow2:hover{
+        fill:var(--bodyColor);
+    }
+    */
+
+    #svg_css{
+        top: calc(210px + 2em);
+        left: 120px;
+        position: absolute;
+        @include setTransitionHidden();
+    }
+    #svg_css:hover{
+        cursor: pointer;
+        width: 75px;
+        height: 86px;
+        top: calc(207px + 2em);
+        left: 115px;
+    }
+
+    #svg_java{
+        left:220px;
+        top: calc(105px + 2em);
+        position: absolute;
+        @include setTransitionHidden();
+    }
+    #svg_java:hover{
+        cursor: pointer;
+        width: 70px;
+        height: 97px;
+        top: calc(102px + 2em);
+        left: 210px;
+    }
+
+    #svg_nodejs{
+        position: absolute;
+        top: calc(215px + 2em);
+        left: 220px;
+        opacity: 1;
+        transition: opacity 1s linear;
+    }
+
+    #svg_nodejs:hover{
+    cursor: pointer;
+    width: 70px;
+    height: 80px;
+    top: calc(210px + 2em);
+    left: 215px;
+    }
+
+    
+
+
+    #svg_postgre{
+        top: calc(120px + 2em);
+        left: 120px;
+        position: absolute;
+        @include setTransitionHidden();
+    }
+
+    #svg_postgre:hover{
+        cursor: pointer;
+        width: 82px;
+        height: 85px;
+        top: calc(120px + 2em);
+        left: 115px;
+    }
+    
+    
+    
+}
+
+#cir1{
+    grid-area: cir1;
+    transition: transform 0.5s ease-in;
+    
+}
+
+#cir2{
+    grid-area: cir2;
+    transition: transform 0.5s ease-in;
+}
+
+#cir3{
+    grid-area: cir3;
+    transition: transform 0.5s ease-in; 
+}
+
+#cir4{
+    grid-area: cir4;
+    transition: transform 0.5s ease-in;
+}
+

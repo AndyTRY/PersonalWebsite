@@ -1,0 +1,28 @@
+.workOuterBody {
+  height: 1250px;
+}
+
+.workInnerBody {
+  height: 1150px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "workLeftInner" "workRightInner";
+}
+
+.workInnerBody .workLeftInner h1 {
+  white-space: normal;
+}
+
+.workInnerBody .workLeftInner p {
+  width: 400px;
+}
+
+.workInnerBody .workRightInner {
+  padding: 4em 12em 0 0;
+}
+
+.workInnerBody .workRightInner .linkIcons {
+  padding-top: calc(308px + 2em);
+  padding-left: 0;
+}
+/*# sourceMappingURL=myWork.css.map */

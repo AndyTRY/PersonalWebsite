@@ -1,0 +1,64 @@
+
+$animate: all 0.2s ease-in-out;
+
+#headerList{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.li_nav{
+    position: relative;
+}
+
+
+
+.nav-container{
+    background-color: var(--headColor);
+
+    #introHead{
+        display: flex;
+        justify-content: space-between;
+        padding:0.5em $leftSpace 0.5em $leftSpace+$NTRerror;
+        align-items: center;
+    
+        .logo{
+            color:var(--secondaryColor);
+            font-size: var(--headTextFont);
+            white-space: nowrap;
+            
+        }
+    
+       
+    
+        ul{
+            display: flex;
+
+            li{
+                cursor: pointer;
+            }
+            
+            p{
+                color: white;
+                display:block;
+                padding: 0 1em;
+                white-space: nowrap;
+                font-size: var(--navHeadTextFont);
+            }
+            p:hover{
+                text-decoration: underline;
+            }
+        }
+            
+    }
+}
+
+
+
+
+
+

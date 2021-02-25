@@ -5,14 +5,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 
-    <!--Link for Google Fonts--->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
-
+   
     <link rel="stylesheet"  href="css/main.css">
 
-    <title>My Test</title>
+    <title>Andy Yuen</title>
 </head>
 
 <body>
@@ -22,10 +18,23 @@
       <a href="index.html" class="logo">Andy Yuen</a>
 
       <nav>
-        <ul>
-          <li><a class=navText href="#">My Work</a></li>
-          <li><a class=navText href="#">About Me</a></li>
-          <li><a class=navText href="#">Contact</a></li>
+        <ul id=headerList>
+
+          <li class="li_nav" id="li_myWork">
+          <!--<a id="myWork" class=navText href="#selfImg">My Work</a>-->
+          <p class="hover hover_out">My Work</p>  
+          </li>
+
+          <li class="li_nav" id="li_aboutMe">
+           <!--<a id="aboutMe" class=navText href="">About Me</a>--> 
+            <p class="hover hover_out">About Me</p>
+          </li>
+
+          <li class="li_nav" id="li_contact">
+            <!--  <a id="contact" class=navText href="">Contact</a> -->
+            <p class="hover hover_out">Contact</p>
+          </li>
+
         </ul>
       </nav>
     </header>
@@ -33,9 +42,9 @@
 
   <div class="hero">
     <div class="content">
-      <h1 class="heroText">Learning to make incredible things</h1>
+      <h1 id="HeroH1" class="heroText">Learning to make incredible things</h1>
         
-      <div class="getToKnow">
+      <div id= "getToKnow" class="getToKnow">
         <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M42.78 20.7678C43.7563 19.7915 43.7563 18.2085 42.78 17.2322L26.8701 1.32233C25.8937 0.34602 24.3108 0.34602 23.3345 1.32233C22.3582 2.29864 22.3582 3.88155 23.3345 4.85786L37.4767 19L23.3345 33.1421C22.3582 34.1184 22.3582 35.7014 23.3345 36.6777C24.3108 37.654 25.8937 37.654 26.8701 36.6777L42.78 20.7678ZM0 21.5H41.0122V16.5H0L0 21.5Z" fill="#E83737"/>
         </svg>
@@ -43,57 +52,158 @@
       </div>
     </div>
     
-    <div class="heroAnimation">
+    
       <div class="circleAnimation">
         <img class="circles" id="cir1" src="Pictures/OrangeCircle.svg" alt="" height="200px" width="200px">
         <img class="circles" id="cir2" src="Pictures/RedCircle.svg" alt="" height="200px" width="200px">
         <img class="circles" id="cir3" src="Pictures/RedCircle.svg" alt="" height="200px" width="200px">
         <img class="circles" id="cir4" src="Pictures/OrangeCircle.svg" alt="" height="200px" width="200px">
 
-        <img id="arrow1" src="Pictures/CArrow.svg" alt="">  
+        <!--<img id="arrow1" src="Pictures/CArrow.svg" alt=""> -->
+       
 
-        <img id="svg_css" src="Pictures/css.svg" alt="">
-        <img id="svg_java" src="Pictures/java.svg" alt="">
-        <img id="svg_nodejs" src="Pictures/nodejs.svg" alt="">
-        <img id="svg_postgre" src="Pictures/postgre.svg" alt="">
+        <svg id="arrow1" width="264" height="264" viewBox="0 0 264 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="arrow2" fill-rule="evenodd" clip-rule="evenodd" d="M263.822 263.896L131.866 263.896C131.866 237.788 124.125 212.268 109.62 190.56C95.1158 168.853 74.5003 151.934 50.3804 141.943C34.3294 135.295 17.2062 131.913 0 131.896C8.56075 131.887 17.1406 131.046 25.6181 129.359C51.2236 124.266 74.7438 111.694 93.2043 93.2337L93.2414 93.1966L93.2558 93.211C111.704 74.7539 124.267 51.2425 129.359 25.6476C131.045 17.1689 131.887 8.58755 131.895 0.0256042C131.912 17.2331 135.294 34.3576 141.943 50.4098C151.934 74.5297 168.852 95.1453 190.56 109.65C212.267 124.154 237.788 131.896 263.895 131.896L263.895 263.896H263.822Z"
+           fill="white"/>
+        </svg>
+           
+        <img id="svg_css" src="Pictures/Hero/Black/css.svg" alt="">
+        <img id="svg_java" src="Pictures/Hero/Black/java.svg" alt="">
+        <img id="svg_nodejs" src="Pictures/Hero/Black/nodejs.svg" alt="">
+        <img id="svg_postgre" src="Pictures/Hero/Black/postgre.svg" alt="">
 
+        <img id="Click1" class="introClick" src="Pictures/Click/Click1.svg" alt="">
+        <img id="Click2" class="introClick" src="Pictures/Click/Click2.svg" alt="">
+
+        
+        
       </div> 
-   </div> 
+   
   </div>
 
   <div class="project">
 
-    <div class="subjectHeader">  
-          My Work
+    <div id="subject_myWork" class="subjectHeader">  
+        My Work  
     </div>
     
     <div class="workOuterBody">
+      
       <div class="workInnerBody">
-
         <div class="workLeftInner">
-          <h1 class="heroText">Search Aggregator</h1>
-          <p>A website that arrgeates Search results from select websites 
+          <h2 id="header1" class="textShift fade"><u>Personal Project</u></h2>
+          <h1 id="header2" class="textShift fade heroText">Search Aggregator</h1>
+          <p id="projectParagraph" class="textShift2 fade2">A website that aggregates Search results from select websites 
             onto a single page by scraping basic data on the first page of 
             products
           </p>
   
-          <ul>
+          <ul id="techList" class="textShift fade">
             <li><b>NodeJS/Express</b> for Backend</li>
-            <li><b>Ajax</b> for Frontend Calls</li>
-            <li><b>Python</b> for Webscraping</li>
+            <li><b>Ajax</b> for Frontend calls</li>
+            <li><b>MongoDB</b> for storing results</li>
+            <li><b>Python</b> for web scraping</li>
+            
           </ul>
         </div>
 
         <div class="workRightInner">
-          <img id="searchArr" src="Pictures/searchArr.png" alt="" height="425px" width="610px">
+          <div class="images">
+            <img id="muqo" class="projectImg opaqueImg" src="Pictures/muqo.svg" alt="" height="375x" width="540px">
+            <img id="Jshell" class="projectImg opaqueImg" src="Pictures/Jshell.png" alt="" height="325x" width="470px">
+            <img  id="searchArr" class="projectImg opaqueImg" src="Pictures/searchArr.png" alt="" height="325px" width="470px">
+          
+          </div>
 
           <div class="linkIcons">
-            <img id="iconWebsite" src="Pictures/website.svg" alt="">
-            <img id="iconGithub" src="Pictures/github.svg" padding="10px">  
+            <a id="projectGithub" target="_blank" href="https://github.com/AndyTRY/Scraper"> 
+              <img id="iconGithub" src="Pictures/github.svg" padding="10px">
+            </a>
+              <a id="projectWebsite">
+                <img id="iconWebsite" src="Pictures/website.svg" alt="">
+              </a>
           </div>
         </div>
       
       </div>
+
+      <div class="orangeBox">
+        <img class="buttonClear buttonOpaque" data-project="0" id="nextButton" src="Pictures/nextArrow.svg" alt="">
+        <img class="buttonClear buttonOpaque" id="fakebutton" src="Pictures/nextArrow.svg" alt="">
+
+      </div>
+    </div>
+
+    <div class="aboutMe">
+      <div id="subject_aboutMe" class="subjectHeader">  
+        About Me
+      </div>
+
+      <div id="aboutMeBody" class="aboutMeBody">
+        <img id="selfImg" src="Pictures/SelfImg.jpg" alt="" class="">
+
+        <div class="aboutmeText">
+
+          <p>
+          I’m a second year student at the University of Toronto Scarborough.
+          The program I'm currently undertaking is a Specialist in Computer Science. Some other things I've done with tech include:
+          </p>
+
+          <div class="coolstuff toggleColor" data-cool="0">
+            
+            <p id="coolStuff">
+              Networking
+            </p>
+             
+            <div class="sketchfab sketchfabOn">
+
+              <div id="CADNext" data-cad="0" class="CADArrow" width="200px" height="100px" >
+                <img src="Pictures/DarkArrow.svg" alt="" width="100px" height="50px">
+              </div> 
+
+              <div id="SketchDiv" class="sketchfab-embed-wrapper">
+                <div id="SketchLoad" class="loader">
+                  <img src="Pictures/SketchLoad.gif" width="150px" height="150px" alt="">
+                </div>
+                    <!--TeaPot--><iframe title="Tea Pot" src="https://sketchfab.com/models/6181771fadce4c6cafb41370f641e9d7/embed"></iframe>
+              </div>
+            </div>
+          </div>
+          
+
+            <p>
+            I have a great passion for learning new technologies 
+            and using them to make incredible things.
+            </p>
+
+          <a target="_blank" href="Resume.pdf" class="resumeLink">My Resume</a>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="contact">
+      <div id="subject_contact" class="subjectHeader">  
+        Contact
+      </div>
+
+      <div class="contactBody">
+        <p>Get in touch through email!</p>
+        <p>andyren.yuen@mail.utoronto.ca</p>
+      <div class="contactIcons">
+        
+        <a target="_blank" href="https://www.linkedin.com/in/andy-yuen-2601821a1/">
+          <img src="Pictures/linkden_white.svg" alt="" class="contactIcon">
+        </a>
+        <a target="_blank" href="https://github.com/AndyTRY">
+          <img src="Pictures/github_white.svg" alt="" class="contactIcon">
+        </a>
+
+      </div>
+      </div>
+
+      
     </div>
 
 
@@ -105,7 +215,17 @@
   </div>
 
 
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="JavaScript/main.js"></script>
+  <script type="text/javascript" src="JavaScript/projects.js"></script>
+  <script type="text/javascript" src="JavaScript/scroll.js"></script>
+  <script type="text/javascript" src="JavaScript/coolStuff.js"></script>
+  <script type="text/javascript" src="JavaScript/InterObser.js"></script> 
+  <!--<script type="text/javascript" src="hover.js"></script>-->
+  <script type="text/javascript" src="JavaScript/introClick.js"></script>
+
+
+
+
     
     
 

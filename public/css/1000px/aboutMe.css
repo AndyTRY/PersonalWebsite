@@ -1,0 +1,24 @@
+.aboutMeBody {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutMeBody #selfImg {
+  padding: 3em 0 0 1.5em;
+}
+
+.aboutMeBody .aboutmeText {
+  margin-top: 6em;
+  width: 500px;
+}
+
+.aboutMeBody .aboutmeText p {
+  font-size: 30px;
+}
+
+#subject_aboutMe {
+  padding: 0.5em 3em 0.5em 45px;
+}
+/*# sourceMappingURL=aboutMe.css.map */

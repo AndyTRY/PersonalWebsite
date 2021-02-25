@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAA;EACD,WAAW,CAAA,OAAC;EACZ,WAAW,CAAA,OAAC;EACZ,gBAAgB,CAAA,OAAC;EACjB,eAAe,CAAA,OAAC;EAChB,oBAAoB,CAAA,OAAC;EAErB,cAAc,CAAA,KAAC;EACf,iBAAiB,CAAA,KAAC;EAClB,UAAU,CAAA,KAAC;EACX,YAAY,CAAA,KAAC;CAEhB;;ADTD,AAAA,KAAK,CAAA;EACD,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,GAAG;EACZ,OAAO,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAuB;CAC/C",
+    "sources": [
+        "hero.scss",
+        "../variables.scss"
+    ],
+    "names": [],
+    "file": "hero.css"
+}
